@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ingenya.API</name>
+    </assembly>
+    <members>
+        <member name="M:WebApp.Controllers.ClienteController.TodosLosClientes">
+            <summary>
+            Obtener todos los clientes.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                GET api/TodosLosClientes
+                {        
+                "IdCliente": 0,
+                "Nombre": "Prueba Cliente",
+                "Site": "site.com",
+                "Telefono": "88888888",
+                "Direccion": "San Jose",
+                "CorreoContacto": "test@gmail.com"      
+                }
+            </remarks>
+            <response code="200">Carga de clientes, exitosa</response>  
+            <response code="500">Hubo un error en la carga de los clientes</response>  
+        </member>
+        <member name="M:WebApp.Controllers.ClienteController.InsertarCliente(Ingenya.API.Cliente)">
+            <summary>
+            Insertar un cliente nuevo.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/InsertarCliente
+                  {
+                   "IdCliente": 0,
+                   "Nombre": "string",
+                   "Site": "string",
+                   "Telefono": "string",
+                   "Direccion": "string",
+                   "CorreoContacto": "string"
+                  }
+            
+            </remarks>
+            <response code="201">El nuevo cliente se ingreso correctamente</response> 
+            <response code="500">Hubo un error error al crear el nuevo cliente</response> 
+        </member>
+        <member name="M:WebApp.Controllers.ClienteController.ModificarCliente(Ingenya.API.Cliente)">
+            <summary>
+            Modificar un cliente.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/ModificarCliente
+                  {
+                   "IdCliente": 0,
+                   "Nombre": "string",
+                   "Site": "string",
+                   "Telefono": "string",
+                   "Direccion": "string",
+                   "CorreoContacto": "string"
+                }
+            </remarks>
+            <response code="200">El cliente se modifico correctamente</response> 
+            <response code="500">Hubo un error error al modificar el cliente</response> 
+        </member>
+        <member name="M:WebApp.Controllers.ClienteController.EliminarCliente(System.String)">
+            <summary>
+            Eliminar un cliente.
+            </summary>
+            <param name="id">Id Cliente</param>
+            <response code="200">El cliente se modifico correctamente</response> 
+            <response code="409">No se puede eliminar este cliente por tener proyectos asociados</response> 
+            <response code="500">Hubo un error error al modificar el cliente</response> 
+        </member>
+        <member name="M:WebApp.Controllers.ClienteController.ObtenerCliente(System.String)">
+            <summary>
+            Obtener un cliente por Id.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT ObtenerCliente/{id}
+                {        
+                "IdCliente": 0,
+                "Nombre": "Prueba Cliente",
+                "Site": "site.com",
+                "Telefono": "88888888",
+                "Direccion": "San Jose",
+                "CorreoContacto": "test@gmail.com"      
+                }
+            </remarks>
+            <param name="id">Cliente</param>
+            <response code="200">El cliente se obtuvo correctamente</response> 
+            <response code="404">No se encontro el cliente por id</response> 
+            <response code="500">Hubo un error en la carga del cliente por id</response> 
+        </member>
+        <member name="T:Ingenya.API.Cliente">
+            <summary>
+            CLiente
+            </summary>
+        </member>
+        <member name="P:Ingenya.API.Cliente.IdCliente">
+            <summary>
+            Id Cliente
+            </summary>
+            <example>6073ca0bd932aa3291eb524f</example>
+        </member>
+        <member name="P:Ingenya.API.Cliente.Nombre">
+            <summary>
+            Nombre del cliente
+            </summary>
+            <example>Ingenya</example>
+        </member>
+        <member name="P:Ingenya.API.Cliente.Site">
+            <summary>
+            The user's first name.
+            </summary>
+            <example>Jane</example>
+        </member>
+        <member name="P:Ingenya.API.Cliente.Telefono">
+            <summary>
+            The user's first name.
+            </summary>
+            <example>Jane</example>
+        </member>
+        <member name="P:Ingenya.API.Cliente.Direccion">
+            <summary>
+            The user's first name.
+            </summary>
+            <example>Jane</example>
+        </member>
+        <member name="P:Ingenya.API.Cliente.CorreoContacto">
+            <summary>
+            The user's first name.
+            </summary>
+            <example>Jane</example>
+        </member>
+    </members>
+</doc>

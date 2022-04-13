@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\BitacoraController.cs" />
+    <Compile Remove="Controllers\CartaPsicometricaController.cs" />
+    <Compile Remove="Controllers\CategoriaParametroController.cs" />
+    <Compile Remove="Controllers\ConcentracionParticulaController.cs" />
+    <Compile Remove="Controllers\FactoresDeHumedadController.cs" />
+    <Compile Remove="Controllers\FugaController.cs" />
+    <Compile Remove="Controllers\GraficoNivelActividadController.cs" />
+    <Compile Remove="Controllers\GraNivActCalorLatenteController.cs" />
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Controllers\ImagenesCalculoController.cs" />
+    <Compile Remove="Controllers\NombreParametroController.cs" />
+    <Compile Remove="Controllers\OcupacionController.cs" />
+    <Compile Remove="Controllers\ParametroController.cs" />
+    <Compile Remove="Controllers\PreparaMezclaController.cs" />
+    <Compile Remove="Controllers\ProcesoCartaPsicometricaController.cs" />
+    <Compile Remove="Controllers\ProvedorController.cs" />
+    <Compile Remove="Controllers\ProyectoController.cs" />
+    <Compile Remove="Controllers\ProyectoParametroController.cs" />
+    <Compile Remove="Controllers\ProyectoRoomController.cs" />
+    <Compile Remove="Controllers\ReporteController.cs" />
+    <Compile Remove="Controllers\RoomController.cs" />
+    <Compile Remove="Controllers\SubCategoriaParametroController.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="Models\ClienteReporsitory.cs" />
+    <Compile Remove="Models\IClienteReporsitory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.1.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ingenya.ApiCore\Ingenya.ApiCore.csproj" />
+    <ProjectReference Include="..\Ingenya.Entity\Ingenya.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.19\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
