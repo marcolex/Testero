@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ingenya.API", "Ingenya.API\Ingenya.API.csproj", "{D386669A-2343-45E9-9841-5B8148F865E2}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IngenyaWeb", "IngenyaWeb\IngenyaWeb.csproj", "{79B589F7-C8C2-4ADF-839A-84ED8D25C24B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingenya.Entities", "Ingenya.Entity\Ingenya.Entities.csproj", "{3CC187C0-BC73-431F-B936-A2E7C62AFB7B}"
@@ -10,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingenya.DataAccess", "Ingenya.DataAccess\Ingenya.DataAccess.csproj", "{5554E41D-54DF-4046-9926-9BD43B82BEA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingenya.ApiCore", "Ingenya.ApiCore\Ingenya.ApiCore.csproj", "{C04EBDBE-DE59-4252-BF82-7DE67054B304}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ingenya.API", "Ingenya.API\Ingenya.API.csproj", "{D386669A-2343-45E9-9841-5B8148F865E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingenya.Test", "Ingenya.Test\Ingenya.Test.csproj", "{0922A205-BAE3-48C6-B16C-6651686EA376}"
 EndProject
